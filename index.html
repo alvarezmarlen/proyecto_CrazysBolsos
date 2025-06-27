@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="shortcut icon" href="img/favi-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Crazy's Bolsos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3><a href="index.html">Crazy's Bolsos</a></h3>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="icon-open">☰</span>
+            <span class="icon-close">✖</span>
+        </label>
+
+        <nav id="nav-menu"> 
+              <ul class="menu-navegacion">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a>
+
+                    <input type="checkbox" id="submenu-toggle" class="submenu-toggle">
+                    <label for="submenu-toggle" class="submenu-label">▼</label>
+                    <ul class="submenu">
+                    <li><a href="tradicionales.html">Bolsos Tradicional</a></li>
+                    <li><a href="anekke.html">Bolsos Anekke</a></li>
+                  </ul>
+                </li>
+                <li><a href="conoceme.html">Conóceme</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i>Carrito</a></li>
+            </ul>
+              <!-- Botón de búsqueda con Font Awesome -->
+            <button class="lupa-icono" id="abrirBusqueda" aria-label="Buscar">
+                <i class="fas fa-search"></i>
+            </button>
+        </nav>
+    </header>
+    <!-- Barra de búsqueda desplegable -->
+      <div class="barra-busqueda" id="busqueda">
+        <form action="/buscar" method="get" style="flex: 1; display: flex;">
+          <input type="text" name="q" placeholder="Buscar..." aria-label="Buscar" autocomplete="off">
+        </form>
+            <button class="cerrar-busqueda" id="cerrarBusqueda" aria-label="Cerrar">
+              <i class="fas fa-times"></i>
+            </button>
+      </div>
+
+
+    <main>
+      
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+      <img src="img/WEB_Mesa_de_trabajo_1_a2424bdb-a540-4c95-95f3-3c431508fa0e.webp" style="width:100%; max-height: 350px">
+        <a href="https://anekke.es/collections/rebajas" class="text">Ver Ofertas</a>
+
+
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/desktop_0001_Relleno_generativo_4.webp" style="width:100%; max-height: 350px">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/imagen_slider_recortada_2000x750.webp" style="width:100%; max-height: 350px">
+  </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+
+<div style="text-align:center"> <!-- aqui estan los botones de las fotos de la portada -->
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+
+
+      <section class="seccion-landing">
+        <h3>Comodidad, estilo y versatilidad en cada paso</h3>
+        <div class="contenedor-landing">
+          <div class="columna-principal">     
+            <p>En <strong>Crazy's Bolsos</strong> encontraras equilibrio perfecto entre elegancia y practicidad. Diseñados para mujeres que valoran la libertad de movimiento sin renunciar al buen gusto, nuestros modelos se adaptan con naturalidad a distintos momentos del día. <br><br>
+              Con líneas sofisticadas, detalles sutiles y materiales de alta calidad, cada bolso refleja una propuesta moderna y funcional. Ya sea que lo lleves a una reunión, a una salida informal o en una jornada activa, estos diseños acompañan tu ritmo con estilo propio.
+              Porque sabemos que cada mujer tiene su forma única de moverse por el mundo, nuestros bolsos ofrecen espacio justo, estructura impecable y una silueta pensada para complementar tu presencia sin esfuerzo.
+              Llévalo como tú quieras. Hazlo parte de tu día.</p>
+          </div>
+          
+          <div class="columna-secundaria">
+            <div class="explosion-container">
+              <div class="explosion-wrapper">
+                <img src="img/bolso_negro.png" class="explosion-item">
+              </div>
+              <div class="explosion-wrapper">
+                <img src="img/anekke3.png" class="explosion-item">
+              </div>
+            </div>            
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-main">
+      <div class="footer-contacto">
+        <h2>Contacto</h2>
+        <p><a href="https://www.google.com/maps/place/C.+del+Lic.+Poza,+5,+48008+Bilbao,+Vizcaya/@43.260663,-2.9347865,16z" target="_blank"> Calle Licenciado Poza 5 – Bilbao 48001</a></p>
+        <p><i class="fas fa-phone"></i> <a href="https://wa.me/34613079678" target="_blank">Teléfono: 613 07 96 78</a></p>
+        <p><i class="fas fa-envelope"></i> Correo electrónico: <a class="mail-link" href="mailto:marlenjosefalvarez@gmail.com">marlenjosefalvarez@gmail.com</a></p>
+      </div>
+      <div class="footer-redes">
+        <h2>Redes Sociales</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/tuusuario" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/tuusuario" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/marlen-alvarez-563510371/" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://x.com/tuusuario" class="x" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+          <li><a href="https://www.tiktok.com/@tuusuario" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://github.com/tuusuario" class="github" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>   
+      </div>
+          <div class="footer-inf">
+        <h2>Información</h2>
+        <ul>
+          <li><a href="aviso_legal.html">Aviso legal</a></li>
+          <li><a href="politica_de_cookies.html">Política de cookies</a></li>
+          <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+
+          <div class="footer-bottom">
+      <p>Copyright © 2025 - Desarrollado por <a class="diseño" href="https://github.com/alvarezmarlen" target="_blank">Marlen Alvarez</a></p>
+      </div> 
+    <script src="JS/slides.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="shortcut icon" href="img/favi-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/legal.css">
+    <title>crazy bolsos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3><a href="index.html">Crazy's Bolsos</a></h3>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="icon-open">☰</span>
+            <span class="icon-close">✖</span>
+        </label>
+
+        <nav id="nav-menu"> 
+              <ul class="menu-navegacion">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a>
+
+                    <input type="checkbox" id="submenu-toggle" class="submenu-toggle">
+                    <label for="submenu-toggle" class="submenu-label">▼</label>
+                    <ul class="submenu">
+                    <li><a href="tradicionales.html">Bolsos Tradicional</a></li>
+                    <li><a href="anekke.html">Bolsos Anekke</a></li>
+                  </ul>
+                </li>
+                <li><a href="conoceme.html">Conóceme</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i>Carrito</a></li>
+            </ul>
+              <!-- Botón de búsqueda con Font Awesome -->
+            <button class="lupa-icono" id="abrirBusqueda" aria-label="Buscar">
+                <i class="fas fa-search"></i>
+            </button>
+        </nav>
+    </header>
+    <!-- Barra de búsqueda desplegable -->
+      <div class="barra-busqueda" id="busqueda">
+        <form action="/buscar" method="get" style="flex: 1; display: flex;">
+          <input type="text" name="q" placeholder="Buscar..." aria-label="Buscar" autocomplete="off">
+        </form>
+            <button class="cerrar-busqueda" id="cerrarBusqueda" aria-label="Cerrar">
+              <i class="fas fa-times"></i>
+            </button>
+      </div>
+
+  <main class="aviso-legal">
+    <h1>Política de Privacidad</h1>
+
+    <p>En cumplimiento de lo dispuesto en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD), así como la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), informamos a los usuarios de este sitio web sobre el tratamiento de sus datos personales.</p>
+
+    <h2>1. Responsable del tratamiento</h2>
+      <ul>
+        <li><strong>Titular:</strong> Marlen Alvarez</li>
+        <li><strong>Nombre comercial:</strong> Crazy's Bolsos</li>
+        <li><strong>Domicilio:</strong> Calle Licenciado Poza 5, 48011 - Bilbao, España</li>
+        <li><strong>Email:</strong> marlenjosefalvarez@gmail.com</li>
+      </ul>
+<hr>
+    <h2>2. Finalidades del tratamiento</h2>
+    <p>Los datos personales que recopilamos a través de nuestros formularios de contacto, suscripción o compra son tratados con las siguientes finalidades:</p>
+      <ul>
+        <li>Atender consultas, solicitudes o peticiones realizadas por el usuario.</li>
+        <li>Procesar pedidos, facturación y envío de productos adquiridos.</li>
+        <li>Enviar comunicaciones comerciales relacionadas con nuestros productos, si el usuario lo ha consentido previamente.</li>
+        <li>Mejorar la experiencia del usuario mediante el análisis del comportamiento en el sitio web (cookies, estadísticas anónimas).</li>
+      </ul>
+<hr>
+    <h2>3. Base legal del tratamiento</h2>
+    <p>Las bases jurídicas que legitiman el tratamiento de tus datos personales son:</p>
+      <ul>
+        <li>Tu consentimiento expreso e informado (art. 6.1.a RGPD) al completar formularios y aceptar esta política.</li>
+        <li>La ejecución de un contrato (art. 6.1.b RGPD), cuando realizas un pedido o compras nuestros productos.</li>
+        <li>El cumplimiento de obligaciones legales (art. 6.1.c RGPD), como emitir facturas o conservar datos fiscales.</li>
+        <li>El interés legítimo del responsable (art. 6.1.f RGPD), para mejorar nuestros servicios y evitar fraudes.</li>
+      </ul>
+<hr>
+    <h2>4. Destinatarios de los datos</h2>
+    <p>No cedemos tus datos a terceros, salvo obligación legal. Sin embargo, utilizamos servicios de terceros que pueden acceder a datos en calidad de encargados de tratamiento, como:</p>
+      <ul>
+        <li>Plataformas de envío (mensajería o paquetería).</li>
+        <li>Proveedores de hosting, email y pasarelas de pago (Stripe, PayPal, etc.).</li>
+      </ul>
+    <p>Todos ellos están sujetos a contratos que garantizan el cumplimiento de la normativa europea en materia de protección de datos.</p>
+<hr>
+    <h2>5. Transferencias internacionales</h2>
+    <p>En caso de transferencias internacionales (por ejemplo, herramientas como Google o Meta), se garantiza el uso de cláusulas contractuales tipo aprobadas por la Comisión Europea o que la empresa esté adherida a marcos jurídicos adecuados.</p>
+<hr>
+    <h2>6. Plazo de conservación</h2>
+    <p>Los datos personales se conservarán durante el tiempo estrictamente necesario para cumplir con la finalidad para la que fueron recabados. Posteriormente, se conservarán debidamente bloqueados el tiempo exigido por la legislación fiscal, mercantil o de protección de datos.</p>
+<hr>
+    <h2>7. Derechos de los usuarios</h2>
+    <p>En cualquier momento, puedes ejercer los siguientes derechos sobre tus datos personales:</p>
+      <ul>
+        <li><strong>Acceso:</strong> Saber qué datos tuyos tratamos.</li>
+        <li><strong>Rectificación:</strong> Corregir datos inexactos o incompletos.</li>
+        <li><strong>Supresión:</strong> Solicitar la eliminación de tus datos cuando ya no sean necesarios.</li>
+        <li><strong>Limitación:</strong> Restringir el tratamiento en ciertas circunstancias.</li>
+        <li><strong>Oposición:</strong> Oponerte al tratamiento por motivos personales.</li>
+        <li><strong>Portabilidad:</strong> Recibir tus datos en un formato estructurado y comúnmente utilizado.</li>
+      </ul>
+
+    <p>Para ejercer tus derechos, puedes enviar una solicitud escrita junto con copia de tu DNI/NIE a nuestro correo electrónico: <strong>marlenjosefalvarez@gmail.com</strong></p>
+
+    <p>Además, tienes derecho a presentar una reclamación ante la <a href="https://www.aepd.es" target="_blank" style="color: green;">Agencia Española de Protección de Datos</a> si consideras que el tratamiento de tus datos infringe la normativa.</p>
+<hr>
+    <h2>8. Seguridad de los datos</h2>
+    <p>Crazy's Bolsos adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad, integridad y confidencialidad de los datos personales, evitando su pérdida, alteración, tratamiento o acceso no autorizado.</p>
+<hr>
+    <h2>9. Veracidad de los datos</h2>
+    <p>El usuario garantiza que los datos facilitados son veraces, exactos, completos y actualizados. El usuario se compromete a comunicar cualquier modificación futura de los mismos.</p>
+<hr>
+    <h2>10. Aceptación y consentimiento</h2>
+    <p>El usuario declara haber sido informado de las condiciones sobre protección de datos personales, aceptando y consintiendo el tratamiento de los mismos por parte de Crazis Bolsos en la forma y para las finalidades indicadas en la presente Política de Privacidad.</p>
+    <div class="legal">
+      <a href="PDF/politica_de_privacidad.pdf" target="_blank" download>
+          <img src="img/botton_descargar_pdf.jpg" width="200" height="50">
+      </a>
+    </div>
+  </main>
+
+
+    <footer class="footer-main">
+      <div class="footer-contacto">
+        <h2>Contacto</h2>
+        <p><a href="https://www.google.com/maps/place/C.+del+Lic.+Poza,+5,+48008+Bilbao,+Vizcaya/@43.260663,-2.9347865,16z" target="_blank"> Calle Licenciado Poza 5 – Bilbao 48001</a></p>
+        <p><i class="fas fa-phone"></i> <a href="https://wa.me/34613079678" target="_blank">Teléfono: 613 07 96 78</a></p>
+        <p><i class="fas fa-envelope"></i> Correo electrónico: <a class="mail-link" href="mailto:marlenjosefalvarez@gmail.com">marlenjosefalvarez@gmail.com</a></p>
+      </div>
+      <div class="footer-redes">
+        <h2>Redes Sociales</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/tuusuario" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/tuusuario" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/tuusuario" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://x.com/tuusuario" class="x" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+          <li><a href="https://www.tiktok.com/@tuusuario" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://github.com/tuusuario" class="github" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>   
+      </div>
+          <div class="footer-inf">
+        <h2>Información</h2>
+        <ul>
+          <li><a href="aviso_legal.html">Aviso legal</a></li>
+          <li><a href="politica_de_cookies.html">Política de cookies</a></li>
+          <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+
+          <div class="footer-bottom">
+      <p>Copyright © 2025 - Desarrollado por <a class="diseño" href="https://github.com/alvarezmarlen" target="_blank">Marlen Alvarez</a></p>
+      </div> 
+    <script src="JS/lupa_buscar.js"></script>
+</body>
+</html>
+

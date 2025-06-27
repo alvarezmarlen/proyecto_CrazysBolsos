@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="shortcut icon" href="img/favi-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/legal.css">
+    <title>crazy bolsos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3><a href="index.html">Crazy's Bolsos</a></h3>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="icon-open">☰</span>
+            <span class="icon-close">✖</span>
+        </label>
+
+        <nav id="nav-menu"> 
+              <ul class="menu-navegacion">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a>
+
+                    <input type="checkbox" id="submenu-toggle" class="submenu-toggle">
+                    <label for="submenu-toggle" class="submenu-label">▼</label>
+                    <ul class="submenu">
+                    <li><a href="tradicionales.html">Bolsos Tradicional</a></li>
+                    <li><a href="anekke.html">Bolsos Anekke</a></li>
+                  </ul>
+                </li>
+                <li><a href="conoceme.html">Conóceme</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i>Carrito</a></li>
+            </ul>
+              <!-- Botón de búsqueda con Font Awesome -->
+            <button class="lupa-icono" id="abrirBusqueda" aria-label="Buscar">
+                <i class="fas fa-search"></i>
+            </button>
+        </nav>
+    </header>
+    <!-- Barra de búsqueda desplegable -->
+      <div class="barra-busqueda" id="busqueda">
+        <form action="/buscar" method="get" style="flex: 1; display: flex;">
+          <input type="text" name="q" placeholder="Buscar..." aria-label="Buscar" autocomplete="off">
+        </form>
+            <button class="cerrar-busqueda" id="cerrarBusqueda" aria-label="Cerrar">
+              <i class="fas fa-times"></i>
+            </button>
+      </div>
+
+  <main class="aviso-legal politica-cookies">
+    <h1>Política de Cookies</h1>
+    <p>Este sitio web, www.crazysbolsos.com (en adelante, “el Sitio Web”), utiliza cookies y tecnologías similares para mejorar la experiencia del usuario, analizar la navegación y ofrecer contenido personalizado. A continuación, te explicamos qué son las cookies, para qué las usamos y cómo puedes configurarlas o desactivarlas.</p>
+
+    <h2>1. ¿Qué son las cookies?</h2>
+    <p>Una cookie es un pequeño archivo que se almacena en el navegador del usuario cuando visita una página web. Su finalidad es recordar información sobre tu visita, como tu idioma preferido, productos en el carrito o patrones de navegación, lo que facilita futuras visitas y mejora la experiencia de navegación.</p>
+    <hr>
+    <h2>2. Tipos de cookies utilizadas en este sitio web</h2>
+      <ul>
+        <li><strong>Cookies técnicas:</strong> Son necesarias para el funcionamiento básico del sitio web. Permiten navegar por la página y utilizar sus funciones esenciales, como acceder a zonas seguras.</li>
+        <li><strong>Cookies de personalización:</strong> Permiten recordar tus preferencias (idioma, tipo de navegador, configuración regional, etc.).</li>
+        <li><strong>Cookies de análisis:</strong> Nos ayudan a entender cómo interactúan los usuarios con el sitio web, recopilando información anónima con fines estadísticos. Ejemplo: Google Analytics.</li>
+        <li><strong>Cookies publicitarias o de marketing:</strong> Permiten gestionar los espacios publicitarios de forma eficaz, mostrar anuncios relevantes y limitar la cantidad de veces que ves un anuncio. Pueden ser propias o de terceros (como Google Ads, Meta/Facebook, etc.).</li>
+      </ul>
+    <hr>
+    <h2>3. Cookies propias y de terceros</h2>
+    <p>Este sitio web puede utilizar cookies propias (establecidas por nosotros) y cookies de terceros (establecidas por servicios externos). Los terceros que pueden instalar cookies en este sitio incluyen, pero no se limitan a:</p>
+      <ul>
+        <li>Google Analytics – Análisis del tráfico web.</li>
+        <li>Google Ads / Meta Ads – Publicidad comportamental.</li>
+        <li>Redes sociales (Facebook, Instagram, TikTok) – Compartir contenido, seguimiento de actividad.</li>
+      </ul>
+    <hr>
+    <h2>4. Consentimiento y configuración de cookies</h2>
+    <p>Cuando accedes por primera vez a nuestro sitio web, aparece un banner que te informa del uso de cookies. Puedes aceptar, rechazar o configurar qué tipos de cookies deseas permitir. Este consentimiento se guarda durante un plazo determinado (normalmente 12 meses), salvo que lo modifiques.</p> <br>
+
+    <p>En cualquier momento puedes <strong>cambiar tu configuración de cookies</strong> haciendo clic en el botón flotante de “Configuración de cookies” disponible en el sitio.</p>
+    <hr>
+    <h2>5. ¿Cómo desactivar o eliminar las cookies?</h2>
+    <p>Puedes permitir, bloquear o eliminar las cookies desde tu navegador. Aquí te dejamos enlaces a las instrucciones según el navegador que utilices:</p>
+      <ul class="navegadores">
+        <li><a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank">Google Chrome</a></li>
+        <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank">Mozilla Firefox</a></li>
+        <li><a href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank">Internet Explorer</a></li>
+        <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank">Safari (Mac)</a></li>
+      </ul>
+<hr>
+    <h2>6. Cambios en la política de cookies</h2>
+    <p>Nos reservamos el derecho a actualizar esta Política de Cookies para adaptarla a cambios legislativos o técnicos. Se recomienda revisar esta política periódicamente para estar informado de cómo y para qué usamos las cookies.</p>
+<hr>
+    <h2>7. Contacto</h2>
+    <p>Si tienes dudas sobre esta Política de Cookies, puedes contactarnos en: <strong>marlenjosefalvarez@gmail.com</strong></p>
+    <div class="legal">
+      <a href="PDF/política_de_cookies.pdf" target="_blank" download>
+          <img src="img/botton_descargar_pdf.jpg" width="200" height="50">
+      </a>
+    </div>
+  </main>
+
+
+    <footer class="footer-main">
+      <div class="footer-contacto">
+        <h2>Contacto</h2>
+        <p><a href="https://www.google.com/maps/place/C.+del+Lic.+Poza,+5,+48008+Bilbao,+Vizcaya/@43.260663,-2.9347865,16z" target="_blank"> Calle Licenciado Poza 5 – Bilbao 48001</a></p>
+        <p><i class="fas fa-phone"></i> <a href="https://wa.me/34613079678" target="_blank">Teléfono: 613 07 96 78</a></p>
+        <p><i class="fas fa-envelope"></i> Correo electrónico: <a class="mail-link" href="mailto:marlenjosefalvarez@gmail.com">marlenjosefalvarez@gmail.com</a></p>
+      </div>
+      <div class="footer-redes">
+        <h2>Redes Sociales</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/tuusuario" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/tuusuario" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/tuusuario" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://x.com/tuusuario" class="x" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+          <li><a href="https://www.tiktok.com/@tuusuario" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://github.com/tuusuario" class="github" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>   
+      </div>
+          <div class="footer-inf">
+        <h2>Información</h2>
+        <ul>
+          <li><a href="aviso_legal.html">Aviso legal</a></li>
+          <li><a href="politica_de_cookies.html">Política de cookies</a></li>
+          <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+
+          <div class="footer-bottom">
+      <p>Copyright © 2025 - Desarrollado por <a class="diseño" href="https://github.com/alvarezmarlen" target="_blank">Marlen Alvarez</a></p>
+      </div> 
+    <script src="JS/lupa_buscar.js"></script>
+</body>
+</html>

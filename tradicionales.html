@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="shortcut icon" href="img/favi-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/productos.css">
+    <title>crazy bolsos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3><a href="index.html">Crazy's Bolsos</a></h3>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="icon-open">☰</span>
+            <span class="icon-close">✖</span>
+        </label>
+
+        <nav id="nav-menu"> 
+              <ul class="menu-navegacion">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a>
+
+                    <input type="checkbox" id="submenu-toggle" class="submenu-toggle">
+                    <label for="submenu-toggle" class="submenu-label">▼</label>
+                    <ul class="submenu">
+                    <li><a href="tradicionales.html">Bolsos Tradicional</a></li>
+                    <li><a href="anekke.html">Bolsos Anekke</a></li>
+                  </ul>
+                </li>
+                <li><a href="conoceme.html">Conóceme</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i>Carrito</a></li>
+            </ul>
+              <!-- Botón de búsqueda con Font Awesome -->
+            <button class="lupa-icono" id="abrirBusqueda" aria-label="Buscar">
+                <i class="fas fa-search"></i>
+            </button>
+        </nav>
+    </header>
+    <!-- Barra de búsqueda desplegable -->
+      <div class="barra-busqueda" id="busqueda">
+        <form action="/buscar" method="get" style="flex: 1; display: flex;">
+          <input type="text" name="q" placeholder="Buscar..." aria-label="Buscar" autocomplete="off">
+        </form>
+            <button class="cerrar-busqueda" id="cerrarBusqueda" aria-label="Cerrar">
+              <i class="fas fa-times"></i>
+            </button>
+      </div>
+
+
+    <main>
+      <h2>Colección Tradicional</h2>
+         <section class="tarjetas-tradicional">
+            <div class="tarjeta">
+              <img src="img/bolso_verdeMonedero.png" alt="Bolso verde">
+                <p>Bolso Verde con Billetera</p>
+            </div>
+            <div class="tarjeta">
+              <img src="img/bolso_fusciaAsaHombro.png" alt="Bolso fuscia mano y hombro">
+                <p>Bolso Mano & Cruzado Fuscia</p>
+            </div>
+            <div class="tarjeta">
+              <img src="img/bolso_monedero.png" alt="Bolso Fuscia CH">
+                <p>Bolso Violeta con Monedero.</p>
+            </div>
+            <div class="tarjeta">
+              <img src="img/bolso_miel.png" alt="Bolso color Miel">
+                <p>Bolsa Cuadra Azteca Miel.</p>
+            </div>
+            <div class="tarjeta">
+                <img src="img/bolso_blanco.png" alt="Bolso Blanco">
+                <p>Bolso Blanco & Dorado.</p>
+            </div>
+        </section>
+
+         <section class="tarjetas-tradicional">
+            <div class="tarjeta">
+                <img src="img/bolso_negro_hombro.png" alt="Bolso Negro con Llavero gatito">
+                <p>Bolso Negro con Llavero</p>
+            </div>
+            <div class="tarjeta">
+                <img src="img/bolso_burdeo.png" alt="Bolso Burdeo Cuero">                
+                <p>Bolso Ejecutivo Burdeo.</p>
+            </div>
+            <div class="tarjeta">
+              <img src="img/bolso_negroSM.png" alt="Bolso Negro Marca SM">
+                <p>Bolso Negro Marca SM</p>
+            </div>
+            <div class="tarjeta">
+                <img src="img/bolso_trescolores.png" alt="Bolso con Tres Colores">
+                <p>Bolso con Tres Tonalidades.</p>
+            </div>
+        </section>
+
+         <section class="tarjetas-tradicional">
+            <div class="tarjeta">
+              <img src="img/bolso_rosado.png" alt="Bolso Rosado">                
+                <p>Bolso con Bolsillos Rosado.</p>
+            </div>
+            <div class="tarjeta">
+              <img src="img/bolso_negroCierres.png" alt="Bolso Negro con Cierres">
+                <p>Bolso Negro con Cierres</p>
+            </div>
+            <div class="tarjeta">
+              <img src="img/bolso_rojo.png" alt="Bolso de paja">
+                <p>Bolso Rojo en Cuero.</p>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer-main">
+      <div class="footer-contacto">
+        <h2>Contacto</h2>
+        <p><a href="https://www.google.com/maps/place/C.+del+Lic.+Poza,+5,+48008+Bilbao,+Vizcaya/@43.260663,-2.9347865,16z" target="_blank"> Calle Licenciado Poza 5 – Bilbao 48001</a></p>
+        <p><i class="fas fa-phone"></i> <a href="https://wa.me/34613079678" target="_blank">Teléfono: 613 07 96 78</a></p>
+        <p><i class="fas fa-envelope"></i> Correo electrónico: <a class="mail-link" href="mailto:marlenjosefalvarez@gmail.com">marlenjosefalvarez@gmail.com</a></p>
+      </div>
+      <div class="footer-redes">
+        <h2>Redes Sociales</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/tuusuario" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/tuusuario" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/tuusuario" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://x.com/tuusuario" class="x" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+          <li><a href="https://www.tiktok.com/@tuusuario" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://github.com/tuusuario" class="github" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>   
+      </div>
+          <div class="footer-inf">
+        <h2>Información</h2>
+        <ul>
+          <li><a href="aviso_legal.html">Aviso legal</a></li>
+          <li><a href="politica_de_cookies.html">Política de cookies</a></li>
+          <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+
+          <div class="footer-bottom">
+      <p>Copyright © 2025 - Desarrollado por <a class="diseño" href="https://github.com/alvarezmarlen" target="_blank">Marlen Alvarez</a></p>
+      </div> 
+    <script src="JS/lupa_buscar.js"></script>
+</body>
+</html>
